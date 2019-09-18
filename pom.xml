@@ -19,7 +19,7 @@
   <groupId>com.johncaridi</groupId>
   <artifactId>landon-lib</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>landon-lib</name>
   <description>Landon Library</description>
