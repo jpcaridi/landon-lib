@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.java.gettingstarted.it;
+package com.johncaridi.application;
 
 import static org.junit.Assert.assertTrue;
 
@@ -30,7 +30,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @SuppressWarnings("checkstyle:abbreviationaswordinname")
-public class HelloWorldApplicationIT {
+public class ApplicationTest {
 
   @Autowired
   private TestRestTemplate template;

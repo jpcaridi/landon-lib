@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.java.gettingstarted;
+package com.johncaridi.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class HelloworldApplication {
+public class Application {
   @RequestMapping("/")
   public String home() {
     return "Hello World!";
@@ -42,6 +42,6 @@ public class HelloworldApplication {
   }
 
   public static void main(String[] args) {
-    SpringApplication.run(HelloworldApplication.class, args);
+    SpringApplication.run(Application.class, args);
   }
 }
