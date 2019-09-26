@@ -21,10 +21,10 @@
 <html>
 <head>
   <link href='//fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
-  <title>Hello App Engine Standard Java 8</title>
+  <title>Landon-lib</title>
 </head>
 <body>
-    <h1>Hello App Engine -- Java 8!</h1>
+    <h1>Landon service library - landon-lib</h1>
 
   <p>This is <%= HelloAppEngine.getInfo() %>.</p>
   <table>
@@ -33,6 +33,12 @@
     </tr>
     <tr>
       <td><a href='/hello'>Hello App Engine</a></td>
+    </tr>
+    <tr>
+      <td><a href='/api/landonlib'>Landon-lib</a></td>
+    </tr>
+    <tr>
+      <td><a href='/api/search'>Search</a></td>
     </tr>
   </table>
 

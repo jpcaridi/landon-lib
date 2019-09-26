@@ -37,13 +37,13 @@ public class HelloAppEngine extends HttpServlet {
     Properties properties = System.getProperties();
 
     response.setContentType("text/plain");
-    response.getWriter().println("Hello App Engine - Standard using "
+    response.getWriter().println("Landon-lib - Standard using "
             + SystemProperty.version.get() + " Java "
             + properties.get("java.specification.version"));
   }
 
   public static String getInfo() {
-    return "Version: " + System.getProperty("java.version")
+    return "Version: 1.0-SNAPSHOT"
           + " OS: " + System.getProperty("os.name")
           + " User: " + System.getProperty("user.name");
   }

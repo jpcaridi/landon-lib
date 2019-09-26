@@ -34,8 +34,11 @@ dependencies {
 
     compile 'jstl:jstl:1.2'
 
-// Add your dependencies here.
-//  compile 'com.google.cloud:google-cloud:+'   // Latest Cloud API's http://googlecloudplatform.github.io/google-cloud-java
+    // Add your dependencies here.
+    //  compile 'com.google.cloud:google-cloud:+'   // Latest Cloud API's http://googlecloudplatform.github.io/google-cloud-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.10'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.10'
 
     testCompile 'junit:junit:4.12'
     testCompile 'com.google.truth:truth:0.33'
@@ -69,6 +72,11 @@ test {
     }
     afterTest { descriptor, result ->
         logger.lifecycle("test: " + descriptor + ": " + result )
+    }
+}
+appengine {
+    run {
+        jvmFlags = ['-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000']
     }
 }
 // [END model]
