@@ -13,8 +13,8 @@ import java.util.UUID;
 public class UserSessionImpl implements UserSession {
     private static final String _databaseHost = "johncaridi.com";
     private static final String _databaseName = "johnca14_landon_music_lib";
-    private static final String _userName = "johnca14_music_collection_session";
-    private static final String _password = "Y%ELM8;p?_=6";
+    private static final String _userName = "johnca14_jpcaridi";
+    private static final String _password = "n1rvanafan11";
     private static final Integer _port = 3306;
     private static final int TIME_TO_EXPIRE = (5 * 60000);
 
